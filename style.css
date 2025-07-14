@@ -1,49 +1,108 @@
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: black;
-}
- 
-.visibledevice {display:none;}
-.visibledesktop {display:display;}
-.Haut {display:display;}
-.hautm {display: display;}
-
-@media (max-width : 500px) {
-    .visibledevice {display:block;}
-    .visibledesktop {display:none;}
-    .haut {display: none;}
-    .hautm {display: display;}
-}
-.hautm {
-    background: linear-gradient(to right, #0d0085, #0004ff);
-    overflow: auto;
-    white-space: nowrap;
-    border-radius: 25px;
-    top: 1%;
-    left: 1%;
-    right: 1%;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
     align-items: center;
-    padding-bottom: 5px;
-  }
-  
-.hautm a {
-    display: inline-block;
-    color: white;
     text-align: center;
-    padding: 14px;
-    text-decoration: none;
-    flex-direction: row;
-    justify-content: center;
-    
-  }
-  .hautm img {
-    border-radius: 25px;
-  }
-  
-.hautm a:hover {
-    background-color: #0004ff;
-  }
+}
 
+.top-bar {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 60px;
+}
+
+.top-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative; /* Required for the ::after pseudo-element */
+    transition: color 0.3s ease; /* Smooth color transition */
+    outline: none; /* Remove the default blue outline */
+}
+a,
+.line-link,
+.line-dot {
+    -webkit-tap-highlight-color: transparent; /* Remove the blue highlight on mobile */
+    outline: none; /* Remove the default focus outline */
+}
+
+.top-bar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Position the underline just below the text */
+    width: 0;
+    height: 2px;
+    background-color: #ffcc00; /* Underline color */
+    transition: width 0.3s ease; /* Smooth underline animation */
+}
+
+.top-bar a:hover {
+    color: #ffcc00; /* Change text color on hover */
+}
+
+.top-bar a:hover::after {
+    width: 100%; /* Expand the underline to full width */
+}
+
+.line-dots {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.line-dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    transition: transform 0.3s ease;
+    outline: none; /* Remove the default blue outline */
+}
+
+.line-dot:hover {
+    transform: scale(1.2); /* Slightly enlarge the dot on hover */
+}
+
+.line-1 {
+    background-color: #d3414e;
+}
+
+.line-2 {
+    background-color: #e79129;
+}
+
+.line-3 {
+    background-color: #60a4df;
+}
+
+.line-4 {
+    background-color: #570091;
+}
+
+.line-5 {
+    background-color: #68c88c;
+}
+
+.line-8 {
+    background-color: #beaa61;
+}
