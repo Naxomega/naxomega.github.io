@@ -18,6 +18,7 @@ body {
     padding: 0;
 }
 
+
 .top-bar li {
     display: inline;
     margin: 0 15px;
@@ -106,3 +107,385 @@ a,
 .line-8 {
     background-color: #beaa61;
 }
+.line-9 {background-color: #324e87; color: white;}
+.line-x {background-color: #9a61b9; color: white;}
+.line-20 {background-color: #33888a; color: white;}
+.line-21 {background-color: #3f55c5; color: white;}
+.line-22 {background-color: #3f55c5; color: white;}
+.line-23 {background-color: #e88439; color: white;}
+.line-24 {background-color: #f8fc6d; color: black;}
+.line-25 {background-color: #6a4893; color: white;}
+.line-26 {background-color: #bec537; color: white;}
+.line-ter {background-color: #034ea2; color: white;}
+.subline-even {background-color: #b4b1a8; color: white;}
+.subline-odd {background-color: #6a5841; color: white;}
+.line-90 {background-color: #70acad; color: white;}
+.line-91 {background-color: #7989d7; color: white;}
+.line-92 {background-color: #efa974; color: white;}
+.line-93 {background-color: #977fb3; color: white;}
+a,
+.line-link,
+.line-dot {
+    -webkit-tap-highlight-color: transparent; /* Remove the blue highlight on mobile */
+    outline: none; /* Remove the default focus outline */
+}
+
+.line-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 45%;      /* Prend 45% de la largeur du conteneur, s'adapte */
+       
+       /* Largeur min pour éviter des boutons trop petits */
+    height: 48px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--line-color, #333);
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 18px;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 30px;
+}
+
+
+.hvr-shutter-out-horizontal {
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #333;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #555;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+  color: rgb(255, 255, 255);
+}
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.youtube {
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #fe2828;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.youtube:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ff6e8b;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.youtube:hover, .youtube:focus, .youtube:active {
+  color: rgb(255, 255, 255);
+}
+.youtube:hover:before, .youtube:focus:before, .youtube:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.twitch {
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #6441A4;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.twitch:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #7931ff;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.twitch:hover, .twitch:focus, .twitch:active {
+  color: rgb(255, 255, 255);
+}
+.twitch:hover:before, .twitch:focus:before, .twitch:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.optymo-clock {
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #126d34;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.optymo-clock:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #172f23;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.optymo-clock:hover, .optymo-clock:focus, .optymo-clock:active {
+  color: rgb(255, 255, 255);
+}
+.optymo-clock:hover:before, .optymo-clock:focus:before, .optymo-clock:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.graillebot {
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #ffb31c;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.graillebot:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ff9d00;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.graillebot:hover, .graillebot:focus, .graillebot:active {
+  color: rgb(255, 255, 255);
+}
+.graillebot:hover:before, .graillebot:focus:before, .graillebot:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.skynet {
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #22abc0;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.skynet:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #00c8ff;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.skynet:hover, .skynet:focus, .skynet:active {
+  color: rgb(255, 255, 255);
+}
+.skynet:hover:before, .skynet:focus:before, .skynet:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.roulette {
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #44c022;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.roulette:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #06a003;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.roulette:hover, .roulette:focus, .roulette:active {
+  color: rgb(255, 255, 255);
+}
+.roulette:hover:before, .roulette:focus:before, .roulette:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+
+.line-link h3 {
+    display: inline-block; /* Ensure each word is inline */
+    margin: 0 5px; /* Add spacing between words */
+}
+
+.line-link h3.notbold {
+    font-weight: normal; /* Make the text not bold */
+}
+.link-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow links to wrap to the next line on smaller screens */
+    justify-content: center; /* Center the links horizontally */
+    gap: 15px; /* Add space between the links */
+    padding: 10px; /* Add padding to prevent links from touching the edges */
+    flex-direction: column; /* Stack headings vertically */
+    align-items: center;
+    text-align: center;
+}
+
+.notbold {
+    font-weight: 400;
+}
+
+@media (max-width: 600px) {
+    .line-link {
+        flex: 1 1 48%;   /* 2 boutons par ligne sur mobile */
+        max-width: 100%;
+    }
+}
+#wrap {
+  width: 750px;
+  height: 1500px;
+  overflow: hidden;
+  
+}
+
+#scaled-frame {
+  width: 73%;
+  height: 500;
+  transform: scale(1.30);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  align-items: center;
+}
+.list-title {
+    margin-bottom: 1px; /* Brings the title closer to the list */
+}
+
+.notable-list {
+    margin-top: 0;      /* Removes the top gap of the list */
+    padding-left: 20px; /* Keeps the bullets indented */
+    list-style-position: inside; /* Centers the bullets better in your layout */
+    text-align: left;   /* Optional: keeps the items aligned if you prefer */
+}
+.header img {border-radius: 20px;}
