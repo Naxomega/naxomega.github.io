@@ -489,3 +489,12 @@ a,
     text-align: left;   /* Optional: keeps the items aligned if you prefer */
 }
 .header img {border-radius: 20px;}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000;
+    }
+    .header {
+        color: #DDD;
+    }
+    .lightmode{color: #DDD;}
+}
