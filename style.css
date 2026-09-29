@@ -279,11 +279,12 @@ a,
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
-  background: #126d34;
+  background: #DCDD3A;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  color: black;
 }
 .optymo-clock:before {
   content: "";
@@ -293,7 +294,7 @@ a,
   bottom: 0;
   left: 0;
   right: 0;
-  background: #172f23;
+  background: #4f4f15;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 50%;
@@ -359,7 +360,7 @@ a,
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
-  background: #22abc0;
+  background: #C592BE;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -373,7 +374,7 @@ a,
   bottom: 0;
   left: 0;
   right: 0;
-  background: #00c8ff;
+  background: #cb4e7c;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 50%;
@@ -430,6 +431,48 @@ a,
 .roulette:hover:before, .roulette:focus:before, .roulette:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+.biloba {
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #00ABC4;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.biloba:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #00525f;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  
+}
+.biloba:hover, .biloba:focus, .biloba:active {
+  color: rgb(255, 255, 255);
+  
+}
+.biloba:hover:before, .biloba:focus:before, .biloba:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  
 }
 
 
